@@ -2,17 +2,6 @@
 
 **OpenMic** is a high-end, full-stack web application designed for gathering honest, anonymous feedback. Built with a sleek, minimalist aesthetic, it provides users with a safe and premium environment to receive community insights through a private dashboard and a customized public sharing link.
 
-## ✨ Key Features
-
--   **🎨 Premium Dark Aesthetic**: A sleek, zinc-and-emerald design system with glassmorphism and smooth micro-animations.
--   **🔐 Secure Authentication**: Integrated with NextAuth.js and bcrypt for industrial-strength security.
--   **👁️ Password Visibility Control**: Convenient Hide/Show toggle on login and registration fields.
--   **📧 Smart Verification**: Modern, dark-themed HTML verification emails with anti-clipping technology for Gmail.
--   **💬 Feed Expansion Modal**: Truncated message cards on the dashboard expand into a focused, high-contrast modal for deep reading.
--   **🔗 Custom Feedback Links**: Generate and share one-click anonymous feedback URLs (`/u/[username]`).
--   **🎛️ Toggle Acceptance**: Instantly enable or disable incoming feedback directly from your private dashboard.
--   **⚡ Ultra-Fast Search/Refresh**: Native Next.js server-side logic and optimized MongoDB queries for real-time responsiveness.
-
 ## 🛠️ Technology Stack
 
 -   **Frontend**: Next.js 14, React 18, Tailwind CSS, Radix UI, Lucide Icons
@@ -53,7 +42,6 @@ Clone the repository and install dependencies:
 
 ```bash
 git clone <repository-url>
-cd ama-app
 npm install
 ```
 
@@ -78,16 +66,6 @@ npm run dev
 npm run build
 npm start
 ```
-
-## ☁️ Vercel Deployment
-
-OpenMic is optimized for Vercel. 
-
-1. Push your code to a GitHub/GitLab repository.
-2. Link your repo to Vercel.
-3. Ensure the **Node.js version** is set to 18.x or higher in the project settings.
-4. Add all environment variables from your `.env` to the Vercel Dashboard.
-5. Deploy with the standard `npm run build` command.
 
 ## 📜 License
 
