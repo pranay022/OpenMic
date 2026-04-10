@@ -33,7 +33,7 @@ export default function Home() {
             </div>
             <div className="p-6 bg-zinc-900/40 border border-zinc-800/50 rounded-2xl backdrop-blur-sm">
               <h3 className="text-white font-bold mb-2">Real-time Insights</h3>
-              <p className="text-zinc-500 text-sm">Receive feedback instantly and manage your community's voice directly from your secure dashboard.</p>
+              <p className="text-zinc-500 text-sm">Receive feedback instantly and manage your community&apos;s voice directly from your secure dashboard.</p>
             </div>
           </div>
         </section>

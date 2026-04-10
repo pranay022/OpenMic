@@ -205,7 +205,7 @@ function UserDashboard() {
               <div className="p-6 bg-emerald-500/5 border border-emerald-500/10 rounded-3xl space-y-4">
                   <h3 className="text-emerald-500 font-bold text-sm uppercase tracking-widest">Tip</h3>
                   <p className="text-zinc-400 text-sm leading-relaxed">
-                    Keep your 'Accept Messages' toggle on to receive new anonymous feedback from your community. 
+                    Keep your &apos;Accept Messages&apos; toggle on to receive new anonymous feedback from your community. 
                   </p>
               </div>
             </div>
