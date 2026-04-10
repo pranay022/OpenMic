@@ -80,7 +80,7 @@ export default function SignInForm() {
       <div className="w-full max-w-sm space-y-8">
         <div className="text-center flex flex-col items-center">
           <div className="w-14 h-14 bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
-            <img src="/logo.png" alt="OpenMic Logo" className="w-full h-full object-cover" />
+            <Image src="/logo.png" alt="OpenMic Logo" width={56} height={56} className="object-cover" />
           </div>
           <h1 className="text-3xl font-bold tracking-tight text-white focus:outline-none">
             Welcome Back

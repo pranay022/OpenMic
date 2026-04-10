@@ -5,6 +5,7 @@ import Link from 'next/link';
 import { useSession, signOut } from 'next-auth/react';
 import { Button } from './ui/button';
 import { User } from 'next-auth';
+import Image from 'next/image';
 
 function Navbar() {
   const { data: session } = useSession();
@@ -15,7 +16,7 @@ function Navbar() {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         <Link href="/" className="flex items-center gap-4 hover:opacity-80 transition-opacity">
           <div className="w-14 h-14 bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
-            <img src="/logo.png" alt="OpenMic Logo" className="w-full h-full object-cover" />
+            <Image src="/logo.png" alt="OpenMic Logo" width={56} height={56} className="object-cover" />
           </div>
           <span className="text-3xl font-bold tracking-tighter">OpenMic</span>
         </Link>

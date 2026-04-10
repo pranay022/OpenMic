@@ -24,10 +24,10 @@ export async function POST(request: Request) {
       );
     }
 
-    const newMessage = { content, topic, createdAt: new Date() };
+    const newMessage = { content, createdAt: new Date() };
 
     // Push the new message to the user's messages array
-    user.messages.push(newMessage as Message);
+    user.messages.push(newMessage as unknown as Message);
     await user.save();
 
     return Response.json(

@@ -114,7 +114,7 @@ export default function SignUpForm() {
       <div className="w-full max-w-sm space-y-8">
         <div className="text-center flex flex-col items-center">
           <div className="w-14 h-14 bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
-            <img src="/logo.png" alt="OpenMic Logo" className="w-full h-full object-cover" />
+            <Image src="/logo.png" alt="OpenMic Logo" width={56} height={56} className="object-cover" />
           </div>
           <h1 className="text-3xl font-bold tracking-tight text-white focus:outline-none">
             Join OpenMic
@@ -167,7 +167,7 @@ export default function SignUpForm() {
                       name="email" 
                       className="bg-zinc-950/50 border-zinc-800 text-white placeholder:text-zinc-600 focus-visible:ring-zinc-700"
                     />
-                    <p className='text-[10px] text-zinc-500'>We'll send a verification code to this email</p>
+                    <p className='text-[10px] text-zinc-500'>We&apos;ll send a verification code to this email</p>
                     <FormMessage />
                   </FormItem>
                 )}

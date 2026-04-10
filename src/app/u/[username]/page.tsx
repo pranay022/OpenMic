@@ -25,6 +25,7 @@ import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { messageSchema } from '@/schemas/messageSchema';
 import { Home, ChevronLeft } from 'lucide-react';
+import Image from 'next/image';
 
 export default function SendMessage() {
   const params = useParams<{ username: string }>();
@@ -79,7 +80,7 @@ export default function SendMessage() {
       <div className="w-full max-w-2xl space-y-12">
         <div className="text-center flex flex-col items-center space-y-2">
           <div className="w-14 h-14 bg-zinc-900 rounded-2xl border border-zinc-800 overflow-hidden shadow-2xl">
-            <img src="/logo.png" alt="OpenMic Logo" className="w-full h-full object-cover" />
+            <Image src="/logo.png" alt="OpenMic Logo" width={56} height={56} className="object-cover" />
           </div>
           <h1 className="text-4xl font-bold tracking-tight text-white">
             Send Feedback
