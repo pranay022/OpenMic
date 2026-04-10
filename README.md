@@ -1,16 +1,17 @@
-# OpenMic - Anonymous Messaging Platform
+# 🎤 OpenMic - Anonymous Feedback & Messaging Platform
 
-**OpenMic** is a full-stack web application that allows users to receive anonymous messages and feedback from others. Built with modern web technologies, it features a secure user authentication system, email verification, and a sleek dashboard to manage messages.
+**OpenMic** is a high-end, full-stack web application designed for gathering honest, anonymous feedback. Built with a sleek, minimalist aesthetic, it provides users with a safe and premium environment to receive community insights through a private dashboard and a customized public sharing link.
 
-## 🚀 Features
+## ✨ Key Features
 
--   **User Authentication**: Secure sign-up and sign-in with NextAuth.js and bcrypt password hashing.
--   **Email Verification**: Account verification via email using Resend and React Email.
--   **Anonymous Messaging**: Custom feedback links (`/u/[username]`) for receiving anonymous messages.
--   **Dashboard Management**: A private dashboard to view, manage, and toggle receiving status for messages.
--   **Interactive UI**: Modern, responsive design using Tailwind CSS, Radix UI components, and Lucide icons.
--   **Message Carousel**: Landing page showcasing the app's utility with an interactive carousel.
--   **Validation & Security**: Robust input validation using Zod and React Hook Form.
+-   **🎨 Premium Dark Aesthetic**: A sleek, zinc-and-emerald design system with glassmorphism and smooth micro-animations.
+-   **🔐 Secure Authentication**: Integrated with NextAuth.js and bcrypt for industrial-strength security.
+-   **👁️ Password Visibility Control**: Convenient Hide/Show toggle on login and registration fields.
+-   **📧 Smart Verification**: Modern, dark-themed HTML verification emails with anti-clipping technology for Gmail.
+-   **💬 Feed Expansion Modal**: Truncated message cards on the dashboard expand into a focused, high-contrast modal for deep reading.
+-   **🔗 Custom Feedback Links**: Generate and share one-click anonymous feedback URLs (`/u/[username]`).
+-   **🎛️ Toggle Acceptance**: Instantly enable or disable incoming feedback directly from your private dashboard.
+-   **⚡ Ultra-Fast Search/Refresh**: Native Next.js server-side logic and optimized MongoDB queries for real-time responsiveness.
 
 ## 🛠️ Technology Stack
 
@@ -19,8 +20,7 @@
 -   **Database**: MongoDB with Mongoose
 -   **Authentication**: NextAuth.js
 -   **Email Service**: Resend (via @react-email/components)
--   **Form Handling**: React Hook Form, Zod
--   **Utilities**: Axios, Day.js, bcryptjs
+-   **Validation**: React Hook Form, Zod
 
 ## 📦 Project Structure
 
@@ -78,6 +78,16 @@ npm run dev
 npm run build
 npm start
 ```
+
+## ☁️ Vercel Deployment
+
+OpenMic is optimized for Vercel. 
+
+1. Push your code to a GitHub/GitLab repository.
+2. Link your repo to Vercel.
+3. Ensure the **Node.js version** is set to 18.x or higher in the project settings.
+4. Add all environment variables from your `.env` to the Vercel Dashboard.
+5. Deploy with the standard `npm run build` command.
 
 ## 📜 License
 

@@ -20,7 +20,7 @@ export async function GET(request: Request) {
   try {
     const user = await UserModel.aggregate([
       { $match: { _id: userId } },
-      { $unwind: '$messages' },
+      { $unwind: { path: '$messages', preserveNullAndEmptyArrays: true } },
       { $sort: { 'messages.createdAt': -1 } },
       { $group: { _id: '$_id', messages: { $push: '$messages' } } },
     ]).exec();
@@ -32,8 +32,11 @@ export async function GET(request: Request) {
       );
     }
 
+    // Filter out null messages (produced by preserveNullAndEmptyArrays on empty array)
+    const messages = user[0].messages.filter((m: any) => m !== null && Object.keys(m).length > 0);
+
     return Response.json(
-      { messages: user[0].messages },
+      { messages: messages },
       {
         status: 200,
       }

@@ -8,7 +8,10 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'OpenMic',
-  description: 'Real feedback from real people.',
+  description: 'Pure, unfiltered anonymous feedback for your community.',
+  icons: {
+    icon: '/logo.png',
+  },
 };
 
 interface RootLayoutProps {
